@@ -1,0 +1,54 @@
+*{
+   padding: 0%;
+   margin:0% ;
+}
+
+header,footer{
+  width: 100%;
+  padding: 55px 0px;
+  background-color: #495F73;
+  color: black;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+
+}
+header h2{
+  /* float flutuar para um lado! */
+    float:left;
+    margin-left: 20px ;
+
+}
+
+nav{
+
+    float: right;
+    margin-right: 20px;
+}
+
+nav a{
+
+   color: white;
+   /* text-decoration */
+   text-decoration: none;
+}
+
+#banner{
+    width: 80%;
+    height: 300px;
+    /* bg-img - chama a imagem */
+    background-image: url(../images/imagem\ 1.jpg) ;
+    /* bg-repeat- configura repetição */
+    background-repeat: no-repeat;
+    /* bg-size - controla o tamanho */
+    background-size: cover;
+    /* bg-position - posição da imagem */
+    background-position: center;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 300px;
+}
+footer{
+    position: absolute;
+    bottom: 0%;
+
+
+}
