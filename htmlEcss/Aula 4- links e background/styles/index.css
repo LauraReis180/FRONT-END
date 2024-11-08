@@ -7,7 +7,7 @@ header,footer{
   width: 100%;
   padding: 55px 0px;
   background-color: #495F73;
-  color: black;
+  color: white;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 
 }
@@ -39,7 +39,7 @@ nav a{
     /* bg-repeat- configura repetição */
     background-repeat: no-repeat;
     /* bg-size - controla o tamanho */
-    background-size: cover;
+    background-size: 100%;
     /* bg-position - posição da imagem */
     background-position: center;
     margin: 20px auto;
@@ -51,4 +51,27 @@ footer{
     bottom: 0%;
 
 
+}
+
+.produto{
+
+  width:200px;
+  padding:10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(218, 236, 230);
+}
+
+#catalogo{
+
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.produto img{
+  width: 100%;
 }
