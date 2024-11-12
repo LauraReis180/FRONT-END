@@ -1,0 +1,45 @@
+@font-face {
+    font-family: hey_comic ;
+    src: url(fonts/hey_comic/Hey\ Comic.otf)
+}
+
+*{
+    
+    padding: 0%;
+    margin:0% ;
+}
+
+.cordefundo{
+
+    background-color: pink;
+}
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    background-color: rgb(173, 205, 226);
+    padding: 10px 0px;
+    display: flex;
+    justify-content: end;
+
+}
+
+.headerh1{
+    margin: 0%;
+    font-family: hey_comic, Arial ;
+    align-items: center;
+}
+.imagem{
+    width: 55%;
+
+}
+  
+
+
+
