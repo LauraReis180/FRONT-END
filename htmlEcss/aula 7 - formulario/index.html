@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <h1>FORMULARIOS</h1>
+        <form action="#">
+        <!-- NOME -->
+           <div class="form-group">
+           <label for="nome">NOME:</label>
+           <input required type="text"id="nome">
+        </div>
+       
+        <!-- email -->
+        <div class="form group">
+            <label for="email">EMAIL: </label>
+            <input required placeholder="ex: username@email.com" type="email" name="" id="email">
+        </div>
+        
+        <!-- senha -->
+         <div class="form group">
+           <label for="senha">SENHA: </label>
+           <input required type="password" name="" id="senha">
+         </div>
+       
+         <!-- data -->
+        <div class= "forms group">
+           <label for="data"> NASCIMENTO</label>
+           <input type="date" name="" id="data">
+        </div>
+        
+        <!-- sexo-->
+        <div class="forms group">
+           <label for="sexo">SEXO</label>
+           <select name="" id="">
+               <option value="">FEMININO</option>
+               <option value="">MASCULINO</option>
+               <option value="">OUTROS</option>
+          </select>
+        </div>
+        
+        <button onclick="mensagem ()">CONFIRMAR</button>
+        </form>
+    </main>
+    <script>
+        function mensagem(){
+          alert("USUARIO CADASTRADO COM SUCESSO!")
+
+        }
+    </script>
+    
+</body>
+</html>
