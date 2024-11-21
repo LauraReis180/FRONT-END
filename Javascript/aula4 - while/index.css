@@ -1,0 +1,43 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+   --corPrimaria: white;
+   --corSecundaria: black ;
+   --branco: rgb(209, 133, 209);
+
+
+}
+header,footer{
+    width: 100%;
+    background-color:  var(--branco) ;
+    padding: 20 px 0px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+nav{
+    display: flex;
+    gap: 10px;
+}
+#logo{
+    display: flex;
+    gap: 20px;
+}
+
+#logo img{
+    width: 30px;
+}
+
+#catalogo{
+    width: 90%;
+    margin: 10px auto ;
+    padding: 20px;
+    background-color: var(--branco) ;
+    display: flex;
+    justify-content: center ;
+    gap: 20px;
+
+}
