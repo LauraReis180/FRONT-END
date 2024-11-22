@@ -5,8 +5,8 @@
 
 :root{
    --corPrimaria: white;
-   --corSecundaria: black ;
-   --branco: rgb(209, 133, 209);
+   --corSecundaria: rgb(138, 131, 131) ;
+   --branco: rgb(224, 178, 228);
 
 
 }
@@ -54,6 +54,7 @@ nav{
     gap: 10px;
     border-radius: 10px;
     text-align: center;
+    justify-content: space-between;
 }
 
 button{

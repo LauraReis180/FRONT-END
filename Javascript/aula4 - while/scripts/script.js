@@ -8,7 +8,7 @@ function testes(){
     // contador++
     // }
 
-    for(var i = 0;i < 3;i++){
+    for(var i = 0;i < 3; i++){
         alert(`QUE MANEIRO!!!' FIZ ${i+1} vezes`)
     }
 }
@@ -16,20 +16,26 @@ function testes(){
 // testes()
 
 function carregarCatalogo(){
-    for (let i = 0;i < 8;i++){
+    var livros =[
+    ['images/livros/COMO EU ERA ANTES DE VOCE.jpg','COMO EU ERA ANTES DE VOCE' ],
+    ['images/livros/a cinco passos de voce.jpg','A CINCO PASSOS DE VOCÊ'],
+    ['images/livros/ORGULHO E PRECONCEITO.jpg','ORGULHO E PRECONCEITO'],
+    ['images/livros/1984.jpg', '1984'],
+    ['images/livros/13 razões do por que.jpg', '13 REASONS WHY']
+]
+       livros.forEach(cadaLivro =>{
         document.getElementById('catalogo').innerHTML += `
         <div class="livro">
-            <img src="" alt="">
-            <h4>COMO EU ERA ANTES DE VOCE</h4>
-
-            <button>
-                Adicionar
-                <img src="" alt="">
-            </button>
-        </div>
-        
+            <img src="${cadaLivro[0]}" alt="">
+    
+            <h4>${cadaLivro[1]}</h4>
+ <button>
+        Adicionar
+        <img src="" alt="">
+    </button>
+</div>
         `
-    }
+    })
 }
 
 carregarCatalogo()
