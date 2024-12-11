@@ -5,33 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página de Filmes</title>
-  <!-- Link do Bootstrap -->
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- CSS externo -->
+  
   <link rel="stylesheet" href="styles.css">
+
+  
 </head>
 <body>
-  <!-- Cabeçalho -->
-  <header class="bg-dark text-white py-3">
+
+ <header class="bg-dark text-white py-3">
     <h1 class="text-center">Filmes</h1>
   </header>
-
-  <!-- Banner (Carrossel de filmes) -->
-  <div class="container my-4">
+    <div class="container my-4">
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="https://moviesfilmsandflix.com/wp-content/uploads/2018/01/maze-runner-the-death-cure-poster.jpg" class="d-block w-100" alt="Filme 1">
         </div>
-        <div class="carousel-item">
-          <img src="images/MacBook Air - 1 (1).png" class="d-block w-100" alt="Filme 2">
+        <div class="carousel-item active">
+          <img src="images/banner1.png" class="d-block w-100" alt="Filme 2">
         </div>
-        <div class="carousel-item">
-          <img src="images/MacBook Air - 1.png" class="d-block w-100" alt="Filme 3">
+        <div class="carousel-item active">
+          <img src="images/banner2.png" class="d-block w-100" alt="Filme 3">
         </div>
-      </div>
 
-      <!-- Adicionando as setas de navegação -->
+     
+      
+
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -43,69 +44,109 @@
     </div>
   </div>
 
-  <!-- Vídeo Transparente no fundo do Banner -->
-  <div class="video-background">
-    <video autoplay loop muted>
-      <source src="seuvideo.mp4" type="video/mp4">
-      Seu navegador não suporta o elemento de vídeo.
-    </video>
-  </div>
+</header>
 
-  <!-- Cards de Filmes -->
-  <div class="container my-5">
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Lista de Filmes</h2>
     <div class="row">
+      <!-- Filme 1 -->
       <div class="col-md-4">
         <div class="card">
-          <img src="images/MacBook Air - 1 (2).png" class="card-img-top" alt="Filme 1">
+          <img src="images/maze runner.jpg" class="card-img-top" alt="mazeRunner">
           <div class="card-body">
-            <h5 class="card-title">Filme 1</h5>
-            <p class="card-text">Descrição do Filme 1. Uma história empolgante.</p>
+            <h5 class="card-title">Maze Runner </h5>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mazeRunnerModal">Ver Detalhes</button>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="filme2.jpg" class="card-img-top" alt="Filme 2">
-          <div class="card-body">
-            <h5 class="card-title">Filme 2</h5>
-            <p class="card-text">Descrição do Filme 2. Uma aventura épica.</p>
+      
+        <!-- Filme 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/como perder.jpg" class="card-img-top" alt="comoPerder">
+            <div class="card-body">
+              <h5 class="card-title">Como Perder Um Homem Em Dez Dias</h5>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#comoPerderModal">Ver Detalhes</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filme 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/a vida.jpg" class="card-img-top" alt="Avida">
+            <div class="card-body">
+              <h5 class="card-title">A Vida Secreta de Walter Mitty</h5>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AvidaModal">Ver Detalhes</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="filme3.jpg" class="card-img-top" alt="Filme 3">
-          <div class="card-body">
-            <h5 class="card-title">Filme 3</h5>
-            <p class="card-text">Descrição do Filme 3. Um drama emocionante.</p>
-          </div>
-        </div>
+    </section>
+
+    <!-- textos -->
+  
+<div class="modal fade" id="mazeRunnerModal" tabindex="-1" aria-labelledby="mazeRunnerModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mazeRunnerModalLabel">Maze Runner</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card">
-      <img src="filme3.jpg" class="card-img-top" alt="Filme 3">
-      <div class="card-body">
-        <h5 class="card-title">Filme 3</h5>
-        <p class="card-text">Descrição do Filme 3. Um drama emocionante.</p>
+      <div class="modal-body">
+        Em um futuro apocalíptico, o jovem Thomas é escolhido para enfrentar o sistema. Ele acorda dentro de um escuro elevador em movimento e não consegue se lembrar nem de seu nome. Na comunidade isolada em que foi abandonado, Thomas conhece outros garotos que passaram pela mesma situação. Para conseguir escapar, ele precisa descobrir os sombrios segredos guardados em sua mente e correr muito.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
       </div>
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="comoPerderModal" tabindex="-1" aria-labelledby="comoPerderModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="comoPerderModalLabel">Como Perder Um Homem Em Dez Dias</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Ben é um publicitário que aposta com o chefe que faz qualquer mulher se apaixonar por ele em dez dias. Se conseguir, será o responsável por uma cobiçada campanha de diamantes. Andie é uma jornalista que, por causa de uma matéria, está decidida a infernizar a vida de qualquer homem que se aproximar. Os dois se conhecem em um bar e escolhem um ao outro como alvo de seus planos totalmente opostos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
 </div>
 
+<div class="modal fade" id="AvidaModal" tabindex="-1" aria-labelledby="AvidaModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="AvidaModalLabel">A Vida Secreta de Walter Mitty</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Walter Mitty desenvolve fotos para uma revista, mas foge do tédio através de devaneios heroicos. Quando Walter recebe uma chance para uma verdadeira aventura, ele tem a chance de construir um relacionamento com uma colega de trabalho chamada Cheryl.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
-  <!-- Rodapé -->
-  <footer class="bg-dark text-white py-3 text-center">
-    <p>&copy; 2024 Filmes</p>
-  </footer>
+  </body>
+  </html>
+  
 
-  <!-- Bootstrap JS e dependências -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-</body>
-</html>
+
+
+
 
 
 
