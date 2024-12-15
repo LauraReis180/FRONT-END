@@ -3,43 +3,72 @@
     src: url(fonts/hey_comic/Hey\ Comic.otf)
 }
 
-*{
-    
-    padding: 0%;
-    margin:0% ;
-}
 
-.cordefundo{
-
-    background-color: pink;
-}
-
-body{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-header{
-    width: 100%;
-    background-color: rgb(173, 205, 226);
-    padding: 10px 0px;
-    display: flex;
-    justify-content: end;
-
-}
-
-.headerh1{
-    margin: 0%;
-    font-family: hey_comic, Arial ;
-    align-items: center;
-}
-.imagem{
-    width: 55%;
-
-}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
   
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    background-color: #c3c0c0;
+    color: #171717;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #c49a6c;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5eaea;
+    font-weight: bold;
+}
+
+/* Título */
+h1 {
+    margin: 60px 10;
+    font-size: 1.8em;
+    background-color:rgba(99, 29, 29, 0.899);
+    
+}
 
 
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
 
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1em;
+}
+
+
+footer {
+    background-color: #c49a6c;
+    color: #fff;
+    padding: 30px 0;
+    margin-top: 70px;
+}
