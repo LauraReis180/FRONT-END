@@ -15,13 +15,26 @@ header,footer {
 .category h2{
     background-color: rgb(101, 155, 214);
     color: whitesmoke;
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
  }
 .recipe {
     background-color: whitesmoke;
     margin: 10px 0;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid whitesmoke;
     border-radius: 5px;
  }
+ 
+ footer {
+    background-color:  rgb(101, 155, 214);
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
