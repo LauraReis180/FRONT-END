@@ -9,13 +9,13 @@ class Categoria {
     }
 }
 
-lista_categorias.push(new Categoria('SUCOS','https://p2.trrsf.com/image/fget/cf/1200/630/middle/images.terra.com/2023/09/25/831755353-sucos-funcionais.jpeg','Suco para todos os gostos, frescor em cada sabor!','Suco feito por @Marca'))
-
+lista_categorias.push(new Categoria('SUCOS','https://i.pinimg.com/236x/7a/c7/62/7ac76299b0add0b815b6160e792ffe95.jpg','Suco para todos os gostos, frescor em cada sabor!','Suco feito por @Blendy'))
 
 lista_categorias.push(new Categoria('SMOOTHIES','https://domf5oio6qrcr.cloudfront.net/medialibrary/8931/Smoothie-post.jpg','Smoothies: todos os sabores,para todos os momentos!','feito por @Blendy'))
 
-lista_categorias.push(new Categoria('DRINKS','https://www.jornaldocomercio.com/_midias/jpg/2021/01/27/20200803_spoiler_fotosvariadas_95_editar-9238212.jpg','mais diversos sucos! Laranja, morango e muito mais.','Suco feito por @Marca'))
+lista_categorias.push(new Categoria('DRINKS ','https://revistasaboresdosul.com.br/wp-content/uploads/2022/08/majestic-gastronomia4.jpg','Sabor que refresca! Descubra nossos drinks deliciosos e inovadores, feitos para todos os gostos!','feito por @Blendy'))
 
+lista_categorias.push(new Categoria('REFRIGERANTES NATURAIS','http://127.0.0.1:5500/images/MacBook%20Air%20-%201%20(9).png','Refresque-se com o melhor da natureza! Nossos refrigerantes naturais trazem o sabor fresco e saudável que você procura.','feito por @Blendy'))
 
 lista_categorias.forEach(categoria => {
     document.querySelector('#categoriaItems').innerHTML += `
