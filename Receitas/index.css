@@ -1,0 +1,27 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: whitesmoke;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+header,footer {
+    background-color: rgb(101, 155, 214);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+   }
+
+.category h2{
+    background-color: rgb(101, 155, 214);
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+ }
+.recipe {
+    background-color: whitesmoke;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+ }
