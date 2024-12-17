@@ -13,7 +13,7 @@
   /* Cabeçalho */
   header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 20px;
     background-color: #1c2833; /* Azul escuro */
@@ -27,7 +27,7 @@
   }
   
   .search-bar {
-    width: 500px;
+    width: 660px;
     max-width: 60%;
     height: 40px;
     padding: 10px;
@@ -41,7 +41,7 @@
     margin-left: 10px;
     text-decoration: none;
     font-size: 1.1em;
-    text-shadow: 0 0 1px #fff, 0 0 2px #fff; /* Iluminação mais suave */
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff; 
   }
   
   .user-options a:hover {
@@ -78,13 +78,17 @@
     background-color: #2980b9;
   }
   
-  /* Banner de Imagens */
-  .banner img {
-    width: 100%;
+  /* Banner de Imagens
+  .div {
+    width: 80%; 
     height: auto;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 10px;
   }
+ */
+
+
+
   
   /* Rodapé */
   footer {

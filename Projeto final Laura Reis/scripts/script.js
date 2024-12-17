@@ -13,3 +13,9 @@ window.addEventListener('click', (e) => {
         loginBox.style.display = 'none';
     }
 });
+document.addEventListener("DOMContentLoaded", function() {
+    // Abrir o dropdown assim que a página for carregada
+    const dropdown = new bootstrap.Dropdown(document.querySelector('.dropdown-toggle'));
+    dropdown.show();
+  });
+  
