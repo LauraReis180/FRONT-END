@@ -20,7 +20,7 @@ body {
     color: #171717;
 }
 
-/* Cabeçalho */
+
 header {
     background-color: #c49a6c;
     padding: 10px 0;
@@ -29,7 +29,7 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: end;
 }
 
 nav ul li {
@@ -42,11 +42,11 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Título */
+
 h1 {
     margin: 60px 10;
     font-size: 1.8em;
-    background-color:rgba(99, 29, 29, 0.899);
+    background-color:rgba(238, 221, 221, 0.899);
     
 }
 
@@ -70,5 +70,8 @@ footer {
     background-color: #c49a6c;
     color: #fff;
     padding: 30px 0;
-    margin-top: 70px;
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
