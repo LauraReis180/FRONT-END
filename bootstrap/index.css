@@ -26,27 +26,26 @@ input {
 }
 
 
-/* Configuração do vídeo de fundo */
 #videoFundo {
-    position: fixed; /* Fixa o vídeo no fundo */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Faz o vídeo cobrir toda a tela */
-    z-index: -1; /* Coloca o vídeo atrás de tudo */
-    opacity: 0.5; /* Deixa o vídeo transparente (0.0 - 1.0) */
+    object-fit: cover; 
+    z-index: -1; 
+    opacity: 0.5; 
 }
 
-/* Ajuste para o conteúdo do site */
+
 body {
-    margin: 0; /* Remove margens */
-    color: white; /* Garante que o texto fique visível */
+    margin: 0; 
+    color: white; 
     font-family: Arial, sans-serif;
 }
 
 header, main, footer {
-    position: relative; /* Garante que o conteúdo apareça por cima do vídeo */
-    z-index: 1; /* Coloca o conteúdo acima do vídeo */
+    position: relative; 
+    z-index: 1; 
 }
 

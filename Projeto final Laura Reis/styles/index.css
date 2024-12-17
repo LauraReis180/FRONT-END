@@ -1,0 +1,113 @@
+/* Resetando estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+  }
+  
+  /* Cabeçalho */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1c2833; /* Azul escuro */
+    color: white;
+  }
+  
+  header .logo h1 {
+    margin: 0;
+    font-size: 2em;
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff; /* Iluminação mais suave */
+  }
+  
+  .search-bar {
+    width: 500px;
+    max-width: 60%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .user-options a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff; /* Iluminação mais suave */
+  }
+  
+  .user-options a:hover {
+    color: #ecf0f1;
+  }
+  
+  /* Estilos Musicais */
+  .musical-genres {
+    margin: 20px;
+  }
+  
+  .musical-genres h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .genres {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .genres button {
+    background-color: #34495e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .genres button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Banner de Imagens */
+  .banner img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #1c2833; /* Azul escuro */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+  
+  .social-links {
+    margin-bottom: 10px;
+  }
+  
+  .social-links a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff; /* Iluminação mais suave */
+  }
+  
+  .social-links a:hover {
+    color: #ecf0f1;
+  }
+  
