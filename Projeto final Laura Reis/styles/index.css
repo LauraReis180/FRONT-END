@@ -1,28 +1,33 @@
+/* Estilos Gerais */
 body {
-  background-color: white;
-  color: #fff;
+  background-color: white; /* Fundo branco */
+  color: #333; /* Cor do texto escuro para contraste */
+  font-family: Arial, sans-serif;
 }
 
 header {
-  background-color: #1a1a1a;
+  background-color: #1a1a1a; /* Cabeçalho escuro */
   color: white;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6); /* Iluminação suave */
 }
-
-footer {
-  background-color: #1a1a1a;
+Footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #343a40;
   color: white;
-  font-size: 1.2rem;
+  padding: 20px;
   text-align: center;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Iluminação suave */
 }
+
 
 h2 {
-  color: #fff;
-  /* Remover a iluminação de "Estilos Musicais" */
-  text-shadow: none;  /* Retirando o brilho ou iluminação */
+  color: #333; /* Título em cor escura */
+  text-shadow: none; /* Retirando o brilho ou iluminação */
 }
 
+/* Estilo dos Botões Ativos */
 .btn-group button.active {
   background-color: #4e4e6d;
   border-color: #fff;
@@ -30,7 +35,7 @@ h2 {
 }
 
 .card {
-  background-color: #333;
+  background-color: #333; /* Cartões com fundo escuro */
   color: white;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Iluminação suave na borda da carta */
 }
@@ -45,16 +50,57 @@ h2 {
   box-shadow: 0 0 10px rgba(26, 115, 232, 0.8); /* Brilho suave no botão */
 }
 
-/* Remover iluminação nos botões de Estilos Musicais */
+/* Estilo dos Botões Padrão */
 .btn-group button {
   background-color: #444; /* Cor padrão dos botões */
   color: white;
   box-shadow: none; /* Remover brilho nas bordas */
 }
 
-/* Hover Effect */
+/* Hover Effect - Quando o mouse passa sobre os botões */
 .btn:hover {
   background-color: #444;
   text-shadow: 0 0 10px rgba(255, 255, 255, 1); /* Iluminação ao passar o mouse */
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Brilho nas bordas */
 }
+
+/* Estilos do Ranking */
+#topMusicasList {
+  margin-top: 20px;
+}
+
+.list-group-item {
+  background-color: #f8f9fa; /* Cor de fundo clara para as músicas/artistas */
+  color: black; /* Texto preto para contraste */
+  font-size: 1.1rem;
+  text-shadow: none; /* Retirando brilho */
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list-group-item:hover {
+  background-color: #e2e6ea; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+/* Estilo dos Botões de Filtro */
+.btn-group button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Estilo do botão ativo */
+.btn-group button.active {
+  background-color: #1a73e8; /* Cor azul do botão ativo */
+}
+
+
+
+
