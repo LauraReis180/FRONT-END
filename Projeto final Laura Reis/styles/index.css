@@ -1,113 +1,60 @@
-/* Resetando estilos básicos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-  }
-  
-  /* Cabeçalho */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #1c2833; /* Azul escuro */
-    color: white;
-  }
-  
-  header .logo h1 {
-    margin: 0;
-    font-size: 2em;
-    text-shadow: 0 0 1px #fff, 0 0 2px #fff; /* Iluminação mais suave */
-  }
-  
-  .search-bar {
-    width: 500px;
-    max-width: 60%;
-    height: 40px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-  }
-  
-  .user-options a {
-    color: white;
-    margin-left: 10px;
-    text-decoration: none;
-    font-size: 1.1em;
-    text-shadow: 0 0 1px #fff, 0 0 2px #fff; /* Iluminação mais suave */
-  }
-  
-  .user-options a:hover {
-    color: #ecf0f1;
-  }
-  
-  /* Estilos Musicais */
-  .musical-genres {
-    margin: 20px;
-  }
-  
-  .musical-genres h2 {
-    font-size: 1.8em;
-    color: #2c3e50;
-    margin-bottom: 10px;
-  }
-  
-  .genres {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-  
-  .genres button {
-    background-color: #34495e;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .genres button:hover {
-    background-color: #2980b9;
-  }
-  
-  /* Banner de Imagens */
-  .banner img {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 10px;
-  }
-  
-  /* Rodapé */
-  footer {
-    background-color: #1c2833; /* Azul escuro */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
-  }
-  
-  .social-links {
-    margin-bottom: 10px;
-  }
-  
-  .social-links a {
-    color: white;
-    margin-left: 15px;
-    text-decoration: none;
-    font-size: 1.1em;
-    text-shadow: 0 0 1px #fff, 0 0 2px #fff; /* Iluminação mais suave */
-  }
-  
-  .social-links a:hover {
-    color: #ecf0f1;
-  }
-  
+body {
+  background-color: white;
+  color: #fff;
+}
+
+header {
+  background-color: #1a1a1a;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6); /* Iluminação suave */
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Iluminação suave */
+}
+
+h2 {
+  color: #fff;
+  /* Remover a iluminação de "Estilos Musicais" */
+  text-shadow: none;  /* Retirando o brilho ou iluminação */
+}
+
+.btn-group button.active {
+  background-color: #4e4e6d;
+  border-color: #fff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* Brilho nas bordas */
+}
+
+.card {
+  background-color: #333;
+  color: white;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Iluminação suave na borda da carta */
+}
+
+.card-title, .card-text {
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Brilho suave no texto */
+}
+
+.card button {
+  background-color: #1a73e8;
+  box-shadow: 0 0 10px rgba(26, 115, 232, 0.8); /* Brilho suave no botão */
+}
+
+/* Remover iluminação nos botões de Estilos Musicais */
+.btn-group button {
+  background-color: #444; /* Cor padrão dos botões */
+  color: white;
+  box-shadow: none; /* Remover brilho nas bordas */
+}
+
+/* Hover Effect */
+.btn:hover {
+  background-color: #444;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1); /* Iluminação ao passar o mouse */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Brilho nas bordas */
+}
