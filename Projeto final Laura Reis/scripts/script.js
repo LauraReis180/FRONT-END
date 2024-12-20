@@ -76,19 +76,19 @@ function highlightButton(button) {
   // Dados das músicas, artistas e ranking semanal
 const topMusicas = [
   {
-    nome: "Música 1",
-    imagem: "https://via.placeholder.com/50",
-    detalhes: "Detalhes da Música 1"
+    nome: " Top 1",
+    imagem: "../images/Die with a smile.jpg",
+    detalhes: " Bruno Mars e Lady Gaga - Die With A Smile"
   },
   {
-    nome: "Música 2",
-    imagem: "https://via.placeholder.com/50",
-    detalhes: "Detalhes da Música 2"
+    nome: "Top 2",
+    imagem: "../images/MTG na Imaginação.jpg",
+    detalhes: " MC Livinho e DJ Topo - MTG Na Imaginação"
   },
   {
-    nome: "Música 3",
-    imagem: "https://via.placeholder.com/50",
-    detalhes: "Detalhes da Música 3"
+    nome: "Top 3",
+    imagem: "../images/All want for christmas is you.jpg",
+    detalhes: " Mariah Carey - All I Want For Christmas Is You"
   }
 ];
 
