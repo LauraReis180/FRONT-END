@@ -1,14 +1,14 @@
-/* Estilos Gerais */
+
 body {
-  background-color: white; /* Fundo branco */
-  color: #333; /* Cor do texto escuro para contraste */
+  background-color: white; 
+  color: #333; 
   font-family: Arial, sans-serif;
 }
 
 header {
-  background-color: #1a1a1a; /* Cabeçalho escuro */
+  background-color: #1a1a1a;
   color: white;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6); /* Iluminação suave */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6); 
 }
 Footer {
   position: fixed;
@@ -20,69 +20,61 @@ Footer {
   padding: 20px;
   text-align: center;
 }
-
-
 h2 {
-  color: #333; /* Título em cor escura */
-  text-shadow: none; /* Retirando o brilho ou iluminação */
+  color: #333; 
+  text-shadow: none; 
 }
-
-/* Estilo dos Botões Ativos */
 .btn-group button.active {
   background-color: #4e4e6d;
   border-color: #fff;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* Brilho nas bordas */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); 
 }
 
 .card {
-  background-color: #333; /* Cartões com fundo escuro */
+  background-color: #333;
   color: white;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Iluminação suave na borda da carta */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); 
 }
 
 .card-title, .card-text {
   color: white;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Brilho suave no texto */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); 
 }
 
 .card button {
   background-color: #1a73e8;
-  box-shadow: 0 0 10px rgba(26, 115, 232, 0.8); /* Brilho suave no botão */
+  box-shadow: 0 0 10px rgba(26, 115, 232, 0.8); 
 }
 
-/* Estilo dos Botões Padrão */
 .btn-group button {
-  background-color: #444; /* Cor padrão dos botões */
+  background-color: #444; 
   color: white;
-  box-shadow: none; /* Remover brilho nas bordas */
+  box-shadow: none; 
 }
 
-/* Hover Effect - Quando o mouse passa sobre os botões */
+
 .btn:hover {
   background-color: #444;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 1); /* Iluminação ao passar o mouse */
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Brilho nas bordas */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1); 
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /
 }
 
-/* Estilos do Ranking */
-#topMusicasList {
+
+#topMusicasLista {
   margin-top: 20px;
 }
-
 .list-group-item {
-  background-color: #f8f9fa; /* Cor de fundo clara para as músicas/artistas */
-  color: black; /* Texto preto para contraste */
+  background-color: #f8f9fa; 
+  color: black; 
   font-size: 1.1rem;
-  text-shadow: none; /* Retirando brilho */
+  text-shadow: none;
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-
 .list-group-item:hover {
-  background-color: #e2e6ea; /* Cor de fundo mais escura ao passar o mouse */
+  background-color: #e2e6ea; 
 }
-
 img {
   border-radius: 50%;
   width: 50px;
@@ -90,15 +82,46 @@ img {
   margin-right: 15px;
 }
 
-/* Estilo dos Botões de Filtro */
+
 .btn-group button {
   margin-right: 10px;
   margin-bottom: 10px;
 }
 
-/* Estilo do botão ativo */
+
 .btn-group button.active {
-  background-color: #1a73e8; /* Cor azul do botão ativo */
+  background-color: #1a73e8;
+}
+
+
+#banner {
+  display: none;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#banner-image {
+  max-width: 50%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#banner-button {
+  margin-top: 15px;
+}
+
+#bemVindoMessage {
+  margin-top: 20px;
+}
+.logo {
+  max-width: 50px;
+  height: auto;
+  margin-right: 10px;
 }
 
 
