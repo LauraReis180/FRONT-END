@@ -7,21 +7,38 @@
 :root {
     --corPrimaria: white;
     --corSecundaria: rgb(138, 131, 131);
-    --branco: rgb(224, 178, 228);
+    --branco: rgb(115, 115, 115);
 }
 
-header, footer {
-    width: 100%;
-    background-color: var(--branco);
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #43494f; 
+    padding: 20px;
+}
+
+.h1 {
+    font-size: 3em; 
+    color: #d4cdcd; 
+    margin: 0;
+    text-align: center; 
+    flex: 1; 
 }
 
 nav {
-    display: flex;
-    gap: 10px;
+    margin-right: 20px; 
+}
+
+nav a {
+    color: #7484dd; 
+    text-decoration: none; 
+    font-size: 18px; 
+    margin: 0 10px; 
+}
+
+nav a:hover {
+    color: #ffffff; 
 }
 
 header h2 {
@@ -46,7 +63,7 @@ header h2 {
     width: 200px;
     padding: 10px;
     background-color: var(--corSecundaria);
-    color: var(--branco);
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,8 +78,20 @@ header h2 {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #43494f;
+    color: white;
+    padding: 20px;
     text-align: center;
-    padding: 10px;
-    background-color: var(--branco);
-    color: var(--corSecundaria);
+}
+footer a {
+    color:  #7484dd;; 
+    font-weight: bold; 
+}
+
+footer a:hover {
+    color: #d4cdcd; 
 }
