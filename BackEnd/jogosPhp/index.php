@@ -6,6 +6,18 @@
     <title>Login</title>
 </head>
 <body>
-     <a href="assets/pages/home.php">Home</a>
+<main>
+     <form action= "assets/scripts/login.php" method="post">
+  <!-- email -->
+   <div class= "form-group">
+    <label for="email">Email:</label>
+    <input placeholder="Digite um email'>
+
+   </div>
+
+
+     </form>
+
+     </main>
 </body>
 </html>
