@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -6,18 +6,24 @@
     <title>Login</title>
 </head>
 <body>
-<main>
-     <form action= "assets/scripts/login.php" method="post">
-  <!-- email -->
-   <div class= "form-group">
-    <label for="email">Email:</label>
-    <input placeholder="Digite um email'>
 
-   </div>
+    <main>
+        <form action="assets/scripts/login.php" method="post">
+            <!-- email -->
+             <div class="form-group">
+                <label for="email">Email: </label>
+                <input placeholder="Digite um email 'jhondoe@gmail'" type="email" required name="email" id="email">
+             </div>
+             <!-- senha -->
+             <div class="form-group">
+                <label for="senha">Senha: </label>
+                <input placeholder="Digite a sua senha" type="password" required name="senha" id="senha">
+             </div>
+             <button type="submit">LOGIN</button>
+             <p>Esqueceu a senha ? <a href="#">clique aqui</a></p>
+             <p>Não possui conta ? <a href="assets/pages/cadastrar.php">Cadastra-se</a></p>
+        </form>
+    </main>
 
-
-     </form>
-
-     </main>
 </body>
 </html>

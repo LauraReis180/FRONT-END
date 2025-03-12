@@ -1,5 +1,11 @@
 <?php
+    $nome = $_REQUEST['nome'];
+    $email = $_REQUEST['email'];
+    $senha = $_REQUEST['senha'];
 
- $nome =$REQUEST ['nome'];
- $email=$REQUEST ['email'];
- $senha=$REQUEST ['senha'];
+    session_start();
+    $_SESSION['nome'] = $nome;
+    $_SESSION['email'] = $email;
+    $_SESSION['senha'] = $senha;
+
+?>
