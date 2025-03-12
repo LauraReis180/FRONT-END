@@ -10,14 +10,14 @@
     <?php
     $nome = "Laura";
     //iniciando uma sessão
-        session_start();
-        $_SESSION[$nome] = $nome;
-        var_dump($_SESSION['nome']);
+       session_start();
+      $_SESSION['nome'] = $nome;
+      var_dump($_SESSION['nome']);
 
-        $_SESSION['produto'] = 
-
-
-    ?>
-
+       $_SESSION['produto'] = [
+        'nome' => 'Coca Cola',
+        'valor' => 12.00
+    ]
+?>
 </body>
 </html>
