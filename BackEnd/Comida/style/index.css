@@ -1,0 +1,14 @@
+* body{
+
+    background-color:AliceBlue;
+ 
+
+}
+header {
+    background-color:DarkGray;
+    color: black;             
+    text-align: center;      
+    padding: 20px;           
+    font-family: Arial, sans-serif; 
+  }
+  
