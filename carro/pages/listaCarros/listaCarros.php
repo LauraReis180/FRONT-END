@@ -5,13 +5,9 @@
 </a>
 
 <form action="index.php?menu=lista" method="post">
-  <Input type="text" name="pesquisa" id="pesquisa">
-<button type="submit">PESQUISA</button>
-
-</Input>
+    <input type="text" name="pesquisa" id="pesquisa">
+    <button type="submit">PESQUISAR</button>
 </form>
-
-  buttom type"submit"></form>
 
 <table class="table">
     <tr>
@@ -22,22 +18,23 @@
         <th>Cor</th>
     </tr>
     <?php
-    if(isset($_POST[PESQUISA])){
-      $ter
-    }
-        $sql="SELECT idCarro,
+        if(isset($_POST['pesquisa'])){
+            $termoPesquisado = $_POST['pesquisa'];
+        }else{
+            $termoPesquisado = "";
+        }
+
+        $sql = "SELECT idCarro,
         upper(modeloCarro) AS modeloCarro,
         upper(marcaCarro) AS marcaCarro,
         upper(valorCarro) AS valorCarro,
-        DATE_FORMAT(anoCarro, '%d/%m/%y') AS anoCarro,
+        DATE_FORMAT(anoCarro, '%d / %m / %y') AS anoCarro,
         upper(corCarro) AS corCarro 
-        FROM carros
-        idCarro ='$termoPesquisado}' OR
+        FROM carros WHERE 
+        idCarro = '$termoPesquisado' OR
         modeloCarro LIKE '%$termoPesquisado%'
-        ORDER BY modeloCarro ASC'
-      
-      ";
-        
+        ORDER BY modeloCarro ASC
+        ";
         // pedido
         $query = mysqli_query($conexao,$sql) or die("Erro na requisição!".mysqli_error($conexao));
 
