@@ -17,7 +17,8 @@
         <label for="ano">Ano:</label>
         <input type="date" id="ano" name="ano">
     </div>
-    <div class="form-group">
+    
+         <div class="form-group">
         <label for="cor">Cor:</label>
         <input type="text" id="cor" name="cor">
     </div>
