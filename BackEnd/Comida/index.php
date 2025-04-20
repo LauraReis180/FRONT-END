@@ -9,7 +9,7 @@ $resultado = $conexao->query("SELECT * FROM catalogo");
 <head>
     <meta charset="UTF-8">
     <title>Comidas</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
 
