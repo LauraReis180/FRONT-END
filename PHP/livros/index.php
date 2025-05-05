@@ -1,5 +1,5 @@
 <?php
-    include('DB/conexao.php');
+include('DB/conexao.php');
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +15,7 @@
         <nav>
             <a href="index.php?menu=home">Home</a>
             <a href="index.php?menu=lista">Lista de Livros</a>
+            <a href="index.php?menu=adicionarLivro">Adicionar Livro</a>
         </nav>
     </header>
 
@@ -25,7 +26,7 @@
         }else{
             $pagina = "home";
         }
-        
+
         switch($pagina){
             case 'home':
                 include("pages/home.php");
@@ -55,6 +56,5 @@
         ?>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
 </body>
 </html>

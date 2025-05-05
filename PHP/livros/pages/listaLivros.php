@@ -5,7 +5,7 @@
 </a>
 
 <form action="index.php?menu=lista" method="post">
-    <input type="text" name="pesquisa" id="pesquisa">
+    <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar por nome ou ID">
     <button type="submit">PESQUISAR</button>
 </form>
 
@@ -15,40 +15,44 @@
         <th>Imagem</th>
         <th>Descrição</th>
         <th>Avaliação</th>
+        <th>Ações</th>
     </tr>
-    <?php
-        // Verifica se existe um termo de pesquisa
-        if(isset($_POST['pesquisa'])){
-            $termoPesquisado = $_POST['pesquisa'];
-        } else {
-            $termoPesquisado = "";
-        }
 
-        // SQL para buscar os livros, considerando a pesquisa
+    <?php
+        include 'DB/conexao.php';
+
+        $termoPesquisado = isset($_POST['pesquisa']) ? mysqli_real_escape_string($conn, $_POST['pesquisa']) : "";
+
         $sql = "SELECT id,
-                       upper(nome) AS nome,
+                       nome,
                        imagem,
-                       descrição,
-                       avaliação
+                       descricao,
+                       avaliacao
                 FROM livro 
                 WHERE id LIKE '%$termoPesquisado%' OR
                       nome LIKE '%$termoPesquisado%' 
                 ORDER BY nome ASC";
 
-        // Realiza a consulta no banco de dados
-        $query = mysqli_query($conn, $sql) or die("Erro na requisição!".mysqli_error($conn));
+        $query = mysqli_query($conn, $sql) or die("Erro na requisição! " . mysqli_error($conn));
 
-        // Loop para exibir os dados dos livros
-        while($dados = mysqli_fetch_assoc($query)){
+        while($dados = mysqli_fetch_assoc($query)) {
             ?>
-                <tr>
-                    <td><?=$dados['nome']?></td>
-                    <td><img src="<?=$dados['imagem']?>" alt="imagem do livro" width="50"></td>
-                    <td><?=$dados['descrição']?></td>
-                    <td><?=$dados['avaliação']?></td>
-                    <td><a href="index.php?menu=pages/editarLivro.php&id=<?=$dados['id']?>" class="btn btn-primary">EDITAR</a></td>
-                    <td><a href="index.php?menu=pages/deletarLivro.php&id=<?=$dados['id']?>" class="btn btn-danger">DELETAR</a></td>
-                </tr>
+            <tr>
+                <td><?= htmlspecialchars($dados['nome']) ?></td>
+                <td>
+                    <?php if (!empty($dados['imagem'])): ?>
+                        <img src="uploads/<?= htmlspecialchars($dados['imagem']) ?>" alt="Imagem do livro" width="50">
+                    <?php else: ?>
+                        Sem imagem
+                    <?php endif; ?>
+                </td>
+                <td><?= htmlspecialchars($dados['descricao']) ?></td>
+                <td><?= htmlspecialchars($dados['avaliacao']) ?></td>
+                <td>
+                    <a href="index.php?menu=pages/editarLivro.php&id=<?= $dados['id'] ?>" class="btn btn-primary">EDITAR</a>
+                    <a href="index.php?menu=pages/deletarLivro.php&id=<?= $dados['id'] ?>" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja deletar este livro?')">DELETAR</a>
+                </td>
+            </tr>
             <?php
         }
     ?>
