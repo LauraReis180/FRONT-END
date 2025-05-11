@@ -1,4 +1,5 @@
-<?php
+<?php 
+
 include('DB/conexao.php');
 ?>
 
@@ -12,49 +13,54 @@ include('DB/conexao.php');
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.php?menu=home">Home</a>
-            <a href="index.php?menu=lista">Lista de Livros</a>
-            <a href="index.php?menu=adicionarLivro">Adicionar Livro</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.php?menu=home">Home</a>
+                <a class="nav-link" href="index.php?menu=lista">Lista de Livros</a>
+                <a class="nav-link" href="index.php?menu=adicionarLivro">Adicionar Livro</a>
+            </div>
         </nav>
     </header>
 
-    <main>
+    <main class="container mt-4">
         <?php
+       
         if(isset($_GET['menu'])){
             $pagina = $_GET['menu'];
-        }else{
+        } else {
             $pagina = "home";
         }
-
-        switch($pagina){
+        switch($pagina) {
             case 'home':
-                include("pages/home.php");
+                include("pages/home/home.php");
                 break;
             case 'lista':
-                include('pages/listaLivros.php');
+                include('pages/listaLivros/listaLivros.php');
                 break;
             case 'adicionarLivro':
-                include('pages/adicionarLivro.php');
+                include('pages/listaLivros/adicionarLivro.php');
                 break;
             case 'dbAdicionarLivro':
-                include('pages/dbAdicionarLivro.php');
+                include('pages/listaLivros/dbAdicionarLivro.php');
                 break;
             case 'editarLivro':
-                include('pages/editarLivro.php');
+                include('pages/listaLivros/editarLivro.php');  
                 break;
             case 'dbEditarLivro':
-                include('pages/dbEditarLivro.php');
+                include('pages/listaLivros/dbEditarLivro.php');
                 break;
             case 'deletarLivro':
-                    include('pages/deletarLivro.php');
-                    break;
+                include('pages/listaLivros/deletar.php');
+                break;
             default:
-                include("pages/home.php");
+                include("pages/home/home.php");
                 break;
         }
+        
+       
         ?>
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
