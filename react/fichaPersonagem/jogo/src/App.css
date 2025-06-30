@@ -1,0 +1,36 @@
+:root{
+  --corCard:gray;
+}
+
+.card{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--corCard);
+  padding: 10px;
+  border-radius:10px ;
+}
+
+
+.cadaStatus div{
+  display: flex;
+  gap:3px;
+}
+
+button{
+  padding: 10px;
+  border-radius:10px ;
+  border: none;
+
+}
+
+.aumentarBtn{
+  background-color: rgb(109, 54, 54);
+
+}
+
+.diminuirBtn{
+  background-color: rgb(95, 67, 14);
+  
+}
