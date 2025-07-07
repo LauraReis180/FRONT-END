@@ -7,7 +7,7 @@
     $ano = mysqli_real_escape_string($conexao,$_POST['ano']);
     $cor = mysqli_real_escape_string($conexao,$_POST['cor']);
 
-    // UPDATE TABELA SET NAME = NAME WHERE ID
+   
     $sql = "UPDATE carros SET
         modeloCarro = '{$modelo}',
         marcaCarro = '{$marca}',

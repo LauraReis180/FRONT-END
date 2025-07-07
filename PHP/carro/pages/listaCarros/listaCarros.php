@@ -35,10 +35,9 @@
         modeloCarro LIKE '%$termoPesquisado%'
         ORDER BY modeloCarro ASC
         ";
-        // pedido
+        
         $query = mysqli_query($conexao,$sql) or die("Erro na requisição!".mysqli_error($conexao));
 
-        // fetch_asso = vai acessar um query, e contar os resultado
 
         while($dados = mysqli_fetch_assoc($query)){
             ?>
