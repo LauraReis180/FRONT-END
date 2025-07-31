@@ -1,12 +1,12 @@
 
 import './Header.css'
-import Logo from'./../../assets/react.svg'
+import Logo from'./../../assets/airplane-engines.svg'
 
 function Header() {
   
   return (
     <>
-    <header className='w-full p-3 bg-sky-50 flex justify-between'>
+    <header className='w-full p-3 bg-Purple-300 flex justify-between'>
        {/* header esquerda */}
       <div className='logo'>
        <img src={Logo} />
